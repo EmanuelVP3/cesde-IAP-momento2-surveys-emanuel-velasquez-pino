@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Encuesta para desarrolladores</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="survey.html">Crear encuesta</a></li>
+                <li><a href="contact-us.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <p>Por favor, llena todos los campos para ponerte en contacto con nosotros.</p>
+        </section>
+
+        <section>
+            <form>
+                <article>
+                    <h3>Información Personal</h3>
+                    
+                    <p>
+                        <label for="nombre">Nombre Completo:</label><br>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo Electrónico:</label><br>
+                        <input type="email" id="correo" name="correo" required>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Preferencias</h3>
+                    
+                    <p>¿Qué lenguaje prefieres?:<br>
+                        <input type="radio" id="js" name="pref_lenguaje" value="javascript">
+                        <label for="js">JavaScript</label>
+                        <input type="radio" id="py" name="pref_lenguaje" value="python">
+                        <label for="py">Python</label>
+                    </p>
+
+                    <p>¿Qué herramientas crees que conoces más?:<br>
+                        <input type="checkbox" id="git" name="herramientas" value="git">
+                        <label for="git">Git</label>
+                        <input type="checkbox" id="vsc" name="herramientas" value="vscode">
+                        <label for="vsc">VS Code</label>
+                    </p>
+
+                    <p>
+                        <label for="interes">¿Qué área te interesa más?</label><br>
+                        <select id="interes" name="interes">
+                            <option value="frontend">Desarrollo Frontend</option>
+                            <option value="backend">Desarrollo Backend</option>
+                            <option value="movil">Desarrollo Móvil</option>
+                            <option value="ia">Inteligencia Artificial</option>
+                        </select>
+                    </p>
+
+
+                    <p>
+                        <label for="pais">País de residencia:</label><br>
+                        <select id="pais" name="pais">
+                            <option value="colombia">Colombia</option>
+                            <option value="mexico">México</option>
+                            <option value="argentina">Argentina</option>
+                        </select>
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Puedes dejarnos una breve descripción de que requieres para prepararnos al momento de contactarnos.</h3>
+                    <p>
+                        <label for="comentarios">Comentarios adicionales:</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    </p>
+                    
+                    <button type="submit">Enviar Formulario</button>
+                </article>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Estudiante: Emanuel Velásquez Pino</p>
+        <p>Año: 2026</p>
+        <p>Curso: Introducción a la Programación</p>
+        <p>Proyecto académico sin frameworks – 2026 Momento 2</p>
+    </footer>
+</body>
+</html>
